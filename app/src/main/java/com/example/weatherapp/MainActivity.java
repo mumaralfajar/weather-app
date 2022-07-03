@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -73,12 +74,13 @@ public class MainActivity extends AppCompatActivity {
                         String countryName = jsonObjectSys.getString("country");
                         String cityName = jsonResponse.getString("name");
                         tvResult.setTextColor(Color.rgb(68,134,199));
-                        output += "Cuaca Bandung saat ini  " + cityName + " (" + countryName + ")"
+                        output += "Cuaca di " + cityName + " (" + countryName + ")" + " saat ini:"
+                                + "\n"
                                 + "\nTemp: " + df.format(temp) + " °C"
                                 + "\nFeels Like: " + df.format(feelsLike) + " °C"
                                 + "\nHumidity: " + humidity + "%"
                                 + "\nDescription: " + description
-                                + "\nWind Speed: " + wind + "m/s (meters per second)"
+                                + "\nWind Speed: " + wind + "m/s"
                                 + "\nCloudiness: " + clouds + "%"
                                 + "\nPressure: " + pressure + " hPa";
                         tvResult.setText(output);

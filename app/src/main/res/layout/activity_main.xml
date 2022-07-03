@@ -10,7 +10,11 @@
 
     <TextView
         android:layout_gravity="center"
-        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:paddingTop="34dp"
+        android:textSize="34sp"
+        android:fontFamily="monospace"
         android:text="Informasi Cuaca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -19,18 +23,24 @@
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:id="@+id/etCity"
+        android:fontFamily="monospace"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:hint="Masukan nama kota"
+        android:hint="Masukan nama Kota"
         android:inputType="textPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
     <Button
         android:layout_gravity="center"
+        android:fontFamily="monospace"
         android:id="@+id/btnGet"
         android:onClick="getWeatherDetail"
         android:text="lihat detail"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="8dp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_btn_primary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -38,10 +48,14 @@
         android:layout_marginTop="16dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="150dp">
+        android:layout_height="250dp">
 
         <TextView
             android:id="@+id/tvResult"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/teal_700"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
