@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Kota Tidak Ditemukan", Toast.LENGTH_SHORT).show();
                 }
             });
             RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
